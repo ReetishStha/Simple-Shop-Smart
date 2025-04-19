@@ -1,0 +1,41 @@
+
+How to Set Up and Run ShopSmart Project Locally:
+
+1. Set Up Maven Wrapper:
+   First, navigate to your project’s root directory in the terminal, then run the following command to generate the Maven wrapper:
+   mvn -N io.takari:maven:wrapper
+
+2. Build the Project:
+   Once the Maven wrapper is set up, run the following command to clean and install the project:
+   .\mvnw clean install
+   - This will compile and package your project into a .war file. The .war file will be located in the target/ folder of your project.
+
+3. Install Apache Tomcat (If Not Installed):
+   Download Apache Tomcat version 10.1.40 (or your preferred version) from the official link:
+   - Tomcat 10.1.40 ZIP Download (https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.40/bin/apache-tomcat-10.1.40-windows-x64.zip)
+
+4. Extract the Tomcat ZIP File:
+   - After downloading, extract the ZIP file to a directory of your choice. For example, C:\apache-tomcat-10.1.40\.
+
+5. Deploy Your WAR File:
+   - After extraction, open the webapps/ folder in your Tomcat directory.
+   - Copy the .war file you generated in Step 2 from your project’s target/ folder and paste it into the webapps/ folder of the Tomcat directory.
+
+6. Navigate to the Tomcat bin/ Folder:
+   - Go to the bin/ folder inside the Tomcat directory:
+     - C:\apache-tomcat-10.1.40\bin\
+
+7. Start Apache Tomcat:
+   - Open a terminal or Command Prompt in this folder.
+   - Run the following command to start Tomcat:
+     .\startup.bat
+
+8. Access the Application in Your Browser:
+   - Open a web browser and navigate to the following URL:
+     - http://localhost:8080/shopsmart-1.0-SNAPSHOT
+   - This will bring up the ShopSmart application hosted locally on your machine.
+
+Troubleshooting Tips:
+- If Tomcat fails to start, check for any errors in the terminal or the logs/ directory inside the Tomcat folder.
+- Make sure that port 8080 is not being used by another application. If it is, you can change the port in the conf/server.xml file of Tomcat.
+- If the .war file is not deploying, ensure that the file is named correctly and located in the webapps/ folder.

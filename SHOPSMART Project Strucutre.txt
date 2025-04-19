@@ -1,0 +1,56 @@
+2nd_Year_Project_Shop_Smart
+├── .idea
+├── src
+│   └── main
+│       ├── java
+│       │   └── com
+│       │       └── shopsmart
+│       │           ├── controller
+│       │           │   ├── admin
+│       │           │   │   └── AdminDashboardServlet.java
+│       │           │   ├── user
+│       │           │   │   └── UserDashboardServlet.java
+│       │           │   ├── LoginServlet.java
+│       │           │   ├── RegisterServlet.java
+│       │           │   └── LogoutServlet.java
+│       │           ├── dao
+│       │           │   ├── ProductDAO.java
+│       │           │   ├── UserDAO.java
+│       │           │   └── ActivityLogDAO.java
+│       │           ├── model
+│       │           │   ├── Product.java
+│       │           │   ├── User.java
+│       │           │   └── ActivityLog.java
+│       │           ├── service
+│       │           │   ├── ProductService.java
+│       │           │   ├── AuthService.java
+│       │           │   ├── ActivityLogService.java
+│       │           │   └── UserService.java
+│       │           ├── filter
+│       │           │   └── AuthFilter.java
+│       │           └── util
+│       │               ├── DbConnectionUtil.java
+│       │               └── PasswordUtil.java
+│       ├── resources
+│       │   ├── db.properties
+│       │   └── schema.sql
+│       └── webapp
+│           ├── assets
+│           │   ├── css
+│           │   │   └── style.css
+│           │   └── images
+│           ├── WEB-INF
+│           │   ├── view
+│           │   │   ├── admin
+│           │   │   │   └── dashboard.jsp
+│           │   │   ├── user
+│           │   │   │   └── dashboard.jsp
+│           │   │   ├── login.jsp
+│           │   │   └── register.jsp
+│           │   └── web.xml
+│           ├── index.jsp
+│           └── error.jsp
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── ShopSmart_Setup_Guide.txt
